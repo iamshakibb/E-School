@@ -1,0 +1,377 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --first-font-color : #000;
+    --btn-bg-color : #21B573;
+    --btn-color :#fff;
+    --bg-color : #F0FFF0;
+}
+
+a:hover{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,ul,ol,p,span{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Mukta', sans-serif;
+}
+.mobile {
+    display: none;
+}
+
+.container {
+    overflow: hidden;
+}
+
+.btn {
+    border-radius: 33px;
+    border: none;
+    background-color: var(--btn-bg-color);
+    color: var(--btn-color);
+}
+
+.info,
+.testimonial,
+.course {
+    margin-top: 50px;
+    margin-bottom: 90px;
+}
+
+
+
+
+/*banckground*/
+.background {
+    background-color: var(--bg-color);
+    height: 100vh;
+}
+/*banckground*/
+
+
+
+
+/*nav bar section work start*/
+nav {
+    padding: 0px 10px;
+}
+
+#my_nav ul li {
+    margin-right: 30px;
+    position: relative;
+}
+
+#my_nav ul li::after {
+    position: absolute;
+    content: "";
+    bottom: 20%;
+    width: 0%;
+    height: 2px;
+    background-color: var(--btn-bg-color);
+    transition: 900ms ease;
+    
+}
+
+#my_nav ul li:hover::after{
+    width: 100%;
+}
+
+#my_nav ul li a {
+    color: var(--first-font-color);
+}
+
+#my_nav ul button {
+    width: 104px;
+    height: 43px;
+    position: relative;
+    overflow: hidden;
+}
+
+#my_nav ul button span{
+    position: relative;
+    z-index: 999;
+}
+
+#my_nav ul button:hover span {
+    color: #000;
+}
+
+#my_nav ul button::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    background-color: #ffcd1b;
+    opacity: 0;
+    transition: 800ms ease;
+}
+
+#my_nav ul button:hover::after {
+    opacity: 1;
+    width: 150%;
+    height: 150%;
+}
+/*nav bar section work end*/
+
+
+
+
+/*banner section work start*/
+.banner {
+    margin-top: 100px;
+}
+
+.banner_text,.banner_img {
+    padding: 0px 40px;
+}
+
+.banner_text h4, .banner_text p{
+    padding-bottom: 20px;
+}
+
+.banner_text h4 {
+    font-size: 30px;
+}
+
+.banner_text h1 {
+    padding-bottom: 20px;
+    font-size: 40px;
+}
+
+.banner_text h1 span {
+    color: var(--btn-bg-color);
+}
+
+.banner_text p {
+    width: 350px;
+}
+
+.banner_text button {
+    padding: 10px 30px;
+    border-radius: 33px;
+    width: 153px;
+    height: 43px;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner_text button span {
+    position: relative;
+    z-index: 999;
+}
+
+.banner_text button::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 100%;
+    background-color: #ffcd1b;
+    opacity: 0;
+    transition: 800ms ease;
+}
+
+.banner_text button:hover::after {
+    opacity: 1;
+    width: 150%;
+}
+/*banner section work end*/
+
+
+
+
+/*info section work start*/
+.info .info_box {
+    width: 250px;
+    height: 250px;
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    margin-right: 10px;
+    position: relative;
+    transition: 700ms ease;
+}
+
+.info .info_box:hover {
+    background-color: #fff9f9;
+    box-shadow: 10px 11px 13px 6px #E5E5E5;
+    transform: scale(1);
+}
+
+.info .info_box .info_icon {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.info .info_icon img {
+    width: 30%;
+}
+
+.info .info_text h1, .info .info_text p{
+    padding-bottom: 20px;
+}
+/*info section work end*/
+
+
+
+
+/*course section work start*/
+.course_heading h1{
+    position: relative;
+}
+
+.course_heading h1::after {
+    position: absolute;
+    content: "";
+    bottom: 3%;
+    left: 50%;
+    right: 0;
+    width: 30%;
+    height: 3px;
+    transform: translateX(-50%);
+    background-color: var(--btn-bg-color);
+}
+
+.card-deck {
+    margin-top: 80px;
+}
+
+.card-text{
+    margin-bottom: 10px;
+}
+
+.card {
+    border-radius: 20px;
+}
+
+.card:hover .card-body h5,
+.card:hover .date i,
+.card:hover .student_sit i {
+    transition: 400ms ease-in;
+}
+
+.card:hover .card-body h5,
+.card:hover .date i,
+.card:hover .student_sit i {
+    color: var(--btn-bg-color);
+}
+
+.card:hover .card-body h5 {
+    cursor: pointer;
+}
+
+.date {
+    padding-left: 25px;
+}
+
+.date i,.student_sit i {
+    font-size: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.student_sit {
+    padding-right: 25px;
+}
+
+.card-body button{
+    padding: 10px 20px;
+    border-radius: 33px;
+    margin-bottom: 10px;
+}
+
+.card-body button:hover {
+    color: #fff;
+}
+
+.card-body {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+/*course section work end*/
+
+/*testimonial section work start*/
+.testimonial {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.testimonial_3,
+.testimonial_1,
+.testimonial_2{
+    position: relative;
+}
+
+.testimonial_heading {
+    margin-bottom: 40px;
+}
+
+.testimonial_img {
+    height: 170px;
+}
+
+.testimonial_img img{
+    width: 40%;
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    transform: translateX(-50%);
+}
+
+.testimonial_text {
+    margin-top: 60px;
+}
+/*testimonial section work end*/
+
+/*testimonial section work start*/
+footer {
+    background-color: #282531;
+    color: var(--bg-color);
+    margin-top: 50px;
+}
+
+.footer_items{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.course_link {
+    padding-left: 60px;
+}
+
+.course_link h6,
+.terms h6,
+.useful_links h6 {
+    padding-bottom: 15px;
+}
+
+.course_link ul li,
+.useful_links ul li {
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.course_link ul li a,
+.useful_links ul li a {
+    color: var(--bg-color);
+}
+
+.course_link ul li:hover a,
+.useful_links ul li:hover a {
+    color: var(--btn-bg-color);
+}
+
+
+.useful_links ul li a i {
+    padding-right: 15px;
+}
+/*footer section work end*/

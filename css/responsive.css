@@ -1,0 +1,279 @@
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .web {
+        display: none;
+    }
+
+    .mobile {
+        display: initial;
+    }
+
+    /*background start*/
+    .background {
+        height: 110vh;
+    }
+    /*background end*/
+
+    /*nav bar srction start*/
+    #my_nav ul li {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    #my_nav {
+        position: relative;
+    }
+
+    #my_nav ul button {
+        left: 50%;
+        transform: translateX(-65%);
+    }
+    /*nav bar srction end*/
+
+
+
+    /*banner section start*/
+    .banner {
+        margin-top: 35px;
+    }
+
+    .banner_text h4 {
+        font-size: 25px;
+    }
+
+    .banner_text h1 {
+        font-size: 35px;
+    }
+
+    .banner_text p {
+        width: 280px;
+    }
+    /*banner section end*/
+
+
+    /*info section start*/
+    .box {
+        position: relative;
+    }
+
+    .info .info_box {
+        left: 50%;
+        margin-bottom: 30px;
+        transform: translateX(-50%);
+    }
+
+    .info .info_box:hover {
+        background-color: none;
+        box-shadow: none;
+        transform: scale(0);
+    }
+    /*info section end*/
+
+
+    /*courses section start*/
+    .course_heading h1::after {
+        bottom: 0%;
+        width: 60%;
+    }
+
+    .card-deck .card {
+        margin-bottom: 40px;
+    }
+    /*courses section end*/
+
+
+    /*footer section start*/
+    .footer_text {
+        margin-bottom: 20px;
+    }
+
+    .course_link {
+        padding-left: 0px;
+        margin-bottom: 20px;
+    }
+
+    .course_link h6{
+        padding-left: 15px;
+    }
+    .course_link ul {
+        padding-left: 30px;
+    }
+
+    .terms p{
+        padding-left: 20px;
+    }
+
+    .terms {
+        margin-bottom: 20px;
+    }
+
+    .useful_links ul {
+        padding-left: 20px;
+    }
+    /*footer section end*/
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .web {
+        display: none;
+    }
+
+    .mobile {
+        display: initial;
+    }
+
+    /*background start*/
+    .background {
+        height: 120vh;
+    }
+    /*background end*/
+
+    /*nav bar srction start*/
+    #my_nav ul li {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    #my_nav {
+        position: relative;
+    }
+
+    #my_nav ul button {
+        left: 50%;
+        transform: translateX(-65%);
+    }
+    /*nav bar srction end*/
+
+
+    /*banner section start*/
+    .banner {
+        margin-top: 35px;
+    }
+
+    .banner_text h4 {
+        font-size: 25px;
+    }
+
+    .banner_text h1 {
+        font-size: 35px;
+    }
+
+    .banner_text p {
+        width: 280px;
+    }
+    /*banner section end*/
+
+    /*info section start*/
+    .info .info_box {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+    /*info section end*/
+
+    /*courses section start*/
+    .course_heading h1::after {
+        bottom: 0%;
+        width: 60%;
+    }
+
+    .card-deck .card {
+        margin-bottom: 40px;
+    }
+
+    .card-deck .card {
+        flex: 1 auto;
+        margin-bottom: 30px;
+    }
+    /*courses section end*/
+
+    /*testimonial section start*/
+    .testimonial_img {
+        margin-bottom: 30px;
+    }
+     /*testimonial section end*/
+
+    /*footer section start*/
+    .footer_text {
+        margin-bottom: 20px;
+    }
+
+    .course_link {
+        padding-left: 0px;
+        margin-bottom: 20px;
+    }
+
+    .course_link h6{
+        padding-left: 15px;
+    }
+    .course_link ul {
+        padding-left: 30px;
+    }
+
+    .terms p{
+        padding-left: 20px;
+    }
+
+    .terms {
+        margin-bottom: 20px;
+    }
+
+    .useful_links ul {
+        padding-left: 20px;
+    }
+    /*footer section end*/
+
+
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    /*nav bar section start*/
+    #my_nav ul li {
+	margin-right: 10px;
+    position: relative;
+    }
+    /*nav bar section end*/
+
+    /*info section start*/
+    .info .info_box {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+    /*info section end*/
+
+
+    /*course section start*/
+     .card-deck .card {
+        flex: 1 auto;
+        margin-bottom: 30px;
+    }
+    /*course section end*/
+
+
+    /*testimonial section start*/
+    .testimonial_img img {
+        width: 50%;
+        top: 40px;
+    }
+    /*testimonial section end*/
+    
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    /*info section start*/
+    .info .info_box {
+        width: 225px;
+        height: 250px;
+        background-color: var(--bg-color);
+        border-radius: 10px;
+        margin-right: 10px;
+        position: relative;
+        transition: 700ms ease;
+    }
+    /*info section end*/
+}
