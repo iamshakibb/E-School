@@ -8,11 +8,6 @@
         display: initial;
     }
 
-    /*background start*/
-    .background {
-        height: 110vh;
-    }
-    /*background end*/
 
     /*nav bar srction start*/
     #my_nav ul li {
@@ -124,7 +119,7 @@
 
     /*background start*/
     .background {
-        height: 120vh;
+        height: 110vh;
     }
     /*background end*/
 
